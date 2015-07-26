@@ -11,21 +11,11 @@ body {
 @media only screen and (max-width : 2200px) {
 
 .message {
-  width: 40%;
-}
-
-.message  h1{
-  margin-top: 9vmin;
-  font-size: 25vmin;
-}
+    top: 45vmin;
+}	
 
 .message  h2{
   font-size: 7vmin;
-}
-
-.dog {
-  left: 32%;
-  top: 8%;
 }
 
 .dog-background {
@@ -43,57 +33,16 @@ body {
 
 }
 
-@media only screen and (max-width : 1137px) {
+
+@media only screen and (max-width : 900px) {
 
 .message {
-  width: 45%;
-}
+    top: 47vmin;
+}	
 
-.message  h1{
-  margin-top: 9vmin;
-  font-size: 25vmin;
-}
 
 .message  h2{
-  font-size: 6vmin;
-}
-
-.dog {
-  left: 20%;
-  top: 11%;
-}
-
-.dog-background {
-  width: 50%;
-}
-
-.dogmenu li {
-  float: left;
-}
-
-.dogmenu a {
-  font: bold 10px sans-serif;
-  display: block;
-  }
-
-}
-
-
-
-
-@media only screen and (max-width : 860px) {
-
-.message {
-  width: 100%;
-}
-
-.message  h1{
-  margin-top: -3vmin;
-  font-size: 25vmin;
-}
-
-.message  h2{
-  font-size: 7vmin;
+  font-size: 5.5vmin;
 }
 
 .dog {
@@ -119,8 +68,9 @@ body {
 @media only screen and (max-width : 480px) {
 
 .message {
-  width: 100%;
-}
+    top: 65 vmin;
+}	
+
 
 .message  h1{
   margin-top: vmin;
@@ -128,7 +78,7 @@ body {
 }
 
 .message  h2{
-  font-size: 5vmin;
+  font-size: 7vmin;
 }
 
 .dog {
@@ -152,14 +102,17 @@ body {
 }
 
 .message {
-  text-align:center;
-  display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+	width: 100%;
 }
 
 .message  h1{
   font-family: ultra;
   color: #F8DC93;
-  margin-bottom: -4vmin;
+  margin-bottom: -7vmin;
 }
 
 .message  h2{
@@ -192,8 +145,12 @@ body {
 }
  
 .dog { 
-  position: absolute;
-  transform: translateX(-60%);
+    transform: translateX(-50%);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+	left: 50%;
+    top: 24%;
 }
 
 .dog-head { 
@@ -208,7 +165,7 @@ body {
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-  right: -8vmin;
+  right: 7vmin;
   top: -5vmin;
   position: relative;
   z-index: 1;
@@ -247,8 +204,8 @@ body {
   display: inline-block;
   width: 0;
   border: .9vmin transparent solid;
-  border-bottom: 2vmin rgb(248, 220, 147) solid;
-  top: -.3vmin;
+  border-bottom: 2vmin transparent solid;
+  top: .5vmin;
   left: 2vmin;
   position: absolute;  
 }
@@ -257,8 +214,8 @@ body {
 display: inline-block;
   width: 0;
   border: .9vmin transparent solid;
-  border-bottom: 2vmin rgb(248, 220, 147) solid;
-  top: -.3vmin;
+  border-bottom: 2vmin transparent solid;
+  top: .5vmin;
   left: .2vmin;
   position: absolute;
 }
@@ -369,7 +326,7 @@ background-color: #F8DC93;
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-  left: 22vmin;
+  right: -14vmin;
   top: 4vmin;
   position: absolute;
   z-index: 1;
@@ -409,7 +366,7 @@ background-color: #F8DC93;
   border-width: 0 0 5vmin 3vmin;
   border-color: transparent transparent #F8DC93 transparent;
   position: absolute;
-  top: -4vmin;
+  top: -3vmin;
   right: 0;
     transform-origin: 100% 100%;
     -webkit-transform: rotate(15deg);
@@ -525,9 +482,9 @@ background-color: #F8DC93;
 }
 
 .dog:hover .dog-smile { 
-  background: #fff;
+  background: #564C35;
   border-radius: 0vmin 0vmin 0vmin 0vmin; 
-  border: 1px solid #fff;
+  border: 1px solid #564C35;
   left: .1vmin;
     animation: snarl .1s ease-in-out infinite;
   -webkit-animation: snarl .1s ease-in-out infinite;
@@ -557,6 +514,14 @@ height: .5vmin;
 animation: heave .1s ease-in-out infinite; 
 }
 
+.dog:hover .dog-fang1 { 
+    border-bottom: 2vmin #fff solid;
+}
+
+.dog:hover .dog-fang2 { 
+    border-bottom: 2vmin #fff solid;
+}
+
 @keyframes pant {
 0% {height: 3vmin; top: -3.2vmin;}
 50% {height: 2vmin; top: -2.2vmin;}
@@ -571,25 +536,25 @@ animation: heave .1s ease-in-out infinite;
 
 @keyframes snarl {
   0% {
-outline: 0px solid #Fff;
+outline: 0px solid #564C35;
   }
   50% {
-outline: 2px solid #fff;
+outline: 2px solid #564C35;
   }
   100% {
-outline: 0px solid #fff;
+outline: 0px solid #564C35;
   }
 }
 
 @-webkit-keyframes snarl {
   0% {
-outline: 0px solid #Fff;
+outline: 0px solid #564C35;
   }
   50% {
-outline: 2px solid #fff;
+outline: 2px solid #564C35;
   }
   100% {
-outline: 0px solid #fff;
+outline: 0px solid #564C35;
   }
 }
 
@@ -640,13 +605,13 @@ outline: 0px solid #fff;
 }
 
 .btnpop {
-  background: #3FB831;
+  background: #3777c4;
   position: relative;
   padding: 15px 40px;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-bottom: 5px solid #23A014;
+  border-bottom: 5px solid #1462BD;
   color: white;
   font-size: 25px;
   vertical-align: middle;
@@ -655,47 +620,25 @@ outline: 0px solid #fff;
   border-radius: 1px;
   transition: all 0.1s;
 }
-
-.btnpop:hover {
-  border-bottom: 5px solid #23A014;
-  background: #31B023;
+.btnpop:hover { 
+  border-bottom: 5px solid #1462BD;
+  background: #4984cc;
 }
-
 .btnpop:active { 
-  top: 2px;
-  border-bottom: 5px solid #31B023;
-  background: #31B023;
+  top: 2px; 
+  border-bottom: 2px solid #1462BD;
+  background: #4984cc; 
   -webkit-box-shadow:none;
   box-shadow:none;
 }
 
 .btnpop:focus {outline:0;}
 
-.dogmenu ul, .dogmenu li {
-	margin: 0;
-	padding: 0;
-}
-.dogmenu ul {
-	background: gray;
-	list-style: none;
-	width: 100%;
-}
-.dogmenu li {
-	position: relative;
-	width:auto;
-}
-.dogmenu a {
-	background: #3FB831;
-	color: #FFFFFF;
-	padding: 10px 25px;
-	text-align: center;
-	text-decoration: none;
-	-webkit-transition: all .25s ease;
-	-moz-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	-o-transition: all .25s ease;
-	transition: all .25s ease;
-}
-.dogmenu li:hover a {
-	background: #000000;
+.dog  h1{
+    font-size: 39vmin;
+    position: absolute;
+    top: -44vmin;
+    font-family: ultra;
+	left: -33.2vmin;
+	color: #1659A9;
 }
