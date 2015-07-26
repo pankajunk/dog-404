@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto',Helvetica,Arial,sans-serif !important;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif !important;
     font-weight: lighter; !important;
 	background-color: #55AADF;
 
@@ -11,16 +11,21 @@ body {
 @media only screen and (max-width : 2200px) {
 
 .message {
-  width: auto;
+  width: 40%;
 }
 
 .message  h1{
   margin-top: 9vmin;
+  font-size: 25vmin;
+}
+
+.message  h2{
+  font-size: 7vmin;
 }
 
 .dog {
   left: 32%;
-  top: 25%;
+  top: 8%;
 }
 
 .dog-background {
@@ -31,9 +36,14 @@ body {
   float: left;
 }
 
+.dogmenu a {
+  font: 11px sans-serif;
+  display: block;
+  }
+
 }
 
-@media only screen and (max-width : 1100px) {
+@media only screen and (max-width : 1137px) {
 
 .message {
   width: 45%;
@@ -41,11 +51,16 @@ body {
 
 .message  h1{
   margin-top: 9vmin;
+  font-size: 25vmin;
+}
+
+.message  h2{
+  font-size: 6vmin;
 }
 
 .dog {
   left: 20%;
-  top: 25%;
+  top: 11%;
 }
 
 .dog-background {
@@ -56,21 +71,34 @@ body {
   float: left;
 }
 
+.dogmenu a {
+  font: bold 10px sans-serif;
+  display: block;
+  }
+
 }
 
-@media only screen and (max-width : 480px) {
+
+
+
+@media only screen and (max-width : 860px) {
 
 .message {
   width: 100%;
 }
 
 .message  h1{
-  margin-top: 40vmin;
+  margin-top: -3vmin;
+  font-size: 25vmin;
+}
+
+.message  h2{
+  font-size: 7vmin;
 }
 
 .dog {
-  left: 30%;
-  top:50%;
+  left: 32%;
+  top: 40%;
 }
 
 .dog-background {
@@ -81,6 +109,46 @@ body {
   float: none;
 }
 
+.dogmenu a {
+  display: none;
+  font: bold 10px sans-serif;
+  }
+
+}
+
+@media only screen and (max-width : 480px) {
+
+.message {
+  width: 100%;
+}
+
+.message  h1{
+  margin-top: vmin;
+  font-size: 20vmin;
+}
+
+.message  h2{
+  font-size: 5vmin;
+}
+
+.dog {
+  left: 27%;
+  top:40%;
+}
+
+.dog-background {
+  width: 100%;
+}
+
+.dogmenu li {
+  float: none;
+}
+
+.dogmenu a {
+  display: none;
+  font: bold 10px sans-serif;
+  }
+
 }
 
 .message {
@@ -89,20 +157,21 @@ body {
 }
 
 .message  h1{
-  color: #76BCE8;
-  font-size: 25vmin;
-  margin-bottom: -7vmin;
+  font-family: ultra;
+  color: #F8DC93;
+  margin-bottom: -4vmin;
 }
 
 .message  h2{
   color: #FFF;
-  font-size: 8vmin;
+  font-weight: 500;
+  
 
 }
 
 .message  p {
   font-size: 3vmin;
-  color: #fff;
+  color: #B3D6EC;
 }
 
 .grass {
@@ -110,6 +179,7 @@ body {
   height: 5vmin;
   width: 65vmin;
   top: 23vmin;
+  left: 2vmin;
 
 }
 
@@ -570,13 +640,13 @@ outline: 0px solid #fff;
 }
 
 .btnpop {
-  background: #3777c4;
+  background: #3FB831;
   position: relative;
   padding: 15px 40px;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-bottom: 5px solid #1462BD;
+  border-bottom: 5px solid #23A014;
   color: white;
   font-size: 25px;
   vertical-align: middle;
@@ -585,14 +655,16 @@ outline: 0px solid #fff;
   border-radius: 1px;
   transition: all 0.1s;
 }
-.btnpop:hover { 
-  border-bottom: 5px solid #1462BD;
-  background: #4984cc;
+
+.btnpop:hover {
+  border-bottom: 5px solid #23A014;
+  background: #31B023;
 }
+
 .btnpop:active { 
   top: 2px;
-  border-bottom: 5px solid #4984CC;
-  background: #4984cc;
+  border-bottom: 5px solid #31B023;
+  background: #31B023;
   -webkit-box-shadow:none;
   box-shadow:none;
 }
@@ -615,8 +687,6 @@ outline: 0px solid #fff;
 .dogmenu a {
 	background: #3FB831;
 	color: #FFFFFF;
-	display: block;
-	font: bold 12px/20px sans-serif;
 	padding: 10px 25px;
 	text-align: center;
 	text-decoration: none;
